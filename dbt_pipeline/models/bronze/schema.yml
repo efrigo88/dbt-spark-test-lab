@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: customers
+    description: "Sample customers model"
+    config:
+      tags: [example_customers]
+    columns:
+      - name: customer_id
+        description: "Customer ID"
+        tests:
+          - not_null:
+              severity: warn

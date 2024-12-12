@@ -1,0 +1,17 @@
+version: 2
+
+seeds:
+  - name: customers_raw
+    config:
+      schema: test
+      meta: { catalog: "main_{{ target.name }}" }
+      quote_columns: false
+      column_types:
+        customer_id: int
+        valid_from: date
+        data: string # JSON
+        source_filename: string
+        loaded_at: timestamp
+        _p_year: int
+        _p_month: int
+        _p_day: int

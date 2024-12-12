@@ -13,3 +13,5 @@ python = ">=3.9,<3.12"
 dbt-core = "1.8.3"
 dbt-spark = { extras = ["session"], version = "~1.8.0" }
 pyspark = "^3.5.0"
+delta-spark = "^3.2.1"
+jupyter = "^1.1.1"

@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_customers
+    config:
+      tags: [example_customers]
+    columns:
+      - name: customer_name
+        description: "The name of the customer"
+      - name: tax_id
+        description: "The tax id of the customer"
+      - name: state
+        description: "The state of the customer"
+      - name: city
+        description: "The city of the customer"
+        tests:
+          - not_null:
+              severity: warn
+      - name: loyalty_segment
+        description: "The loyalty segment of the customer"
