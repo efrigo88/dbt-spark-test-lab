@@ -1,0 +1,47 @@
+# local environment
+*.env
+.venv
+venv/
+.python-version
+
+# dbt
+**/logs/
+**/dbt_packages/
+dbt_pipelines/**/docs/
+dbt_pipelines/**/target/
+*.user.yml
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Distribution / packaging
+*.bak
+*.temp
+.eggs
+**/*.egg-info
+dbt_dags/poetry.lock
+
+# Testing
+.nox
+.coverage
+.coverage.*
+.cache
+coverage.xml
+**/spark-warehouse
+**/metastore_db
+**/derby.log
+**/uncommitted/
+
+# IDEs
+.idea
+.pycharm
+.vscode
+
+# Databricks bundle
+**/.databricks
+**/dist/

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dbt_spark_test"
+version = "0.1.0"
+description = ""
+authors = [
+    "Emiliano Frigo",
+]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+dbt-core = "1.8.3"
+dbt-spark = { extras = ["session"], version = "~1.8.0" }
+pyspark = "^3.5.0"
